@@ -1,5 +1,14 @@
 import express from 'express';
-import routes from './modules';
+import bodyParser from 'body-parser';
+import testPostPlaceholder from '../src/modules/test/test-post-placeholder';
+import restDatTmp from '../src/modules/rest-data-tmp';
+
+const routes = express.Router();
+
+routes.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
+routes.use(bodyParser.json());
+routes.use('/test', testPostPlaceholder);
+routes.use('/rest-data-tmp', restDatTmp);
 
 const app = express();
 app.use('/', routes);

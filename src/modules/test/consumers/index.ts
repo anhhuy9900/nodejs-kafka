@@ -1,4 +1,4 @@
-import { Consumer } from '../../../config/kafka';
+import { Consumer } from '../../../core/kafka-client';
 const runConsumer = async () => {
     await Consumer.connect();
     await Consumer.subscribe({ topic: 'my-topic', fromBeginning: true });

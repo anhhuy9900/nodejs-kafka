@@ -1,5 +1,5 @@
 import reader from 'readline-sync';
-import { Producer } from '../../../config/kafka';
+import { Producer } from '../../../core/kafka-client';
 
 const sendMessage = async (input: string) => {
     try {
