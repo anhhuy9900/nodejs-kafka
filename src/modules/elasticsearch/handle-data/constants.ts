@@ -1,0 +1,1 @@
+export const ES_HANDLE_DATA_INDEX = 'store-data-kafka'
