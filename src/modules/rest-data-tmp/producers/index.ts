@@ -2,7 +2,7 @@ import reader from 'readline-sync';
 import { v4 as uuidv4 } from 'uuid';
 import { Producer } from '../../../core/kafka-client';
 import { Message } from 'kafkajs';
-// import { TOPIC_NAME } from '../constants';
+// import { TOPIC_NAME } from '../constants.ts';
 
 export type MessageType = {
     topicName: string, 
