@@ -21,7 +21,9 @@ export class KafkaConsumer {
 
     async process(cb: (value: Record<string, any>, heartbeat?: () => Promise<void>) => void): Promise<void> {
         await this.consumer.run({
-            autoCommit: true,
+            // autoCommit: true,
+            // autoCommitInterval: 5000, // Commit offsets every 5 seconds
+            // autoCommitThreshold: 100, // Commit offsets after processing 100 messages
             eachMessage: async ({ topic, partition, message, heartbeat }: Kafkajs.EachMessagePayload): Promise<void> => {
                 logger.info('START: ', '=====================================================')
                 logger.info('INFO', `KafkaConsumer - eachMessage - Received message: `, JSON.stringify({

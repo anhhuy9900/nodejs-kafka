@@ -1,8 +1,8 @@
 import { Kafka, Consumer, Producer, Partitioners } from 'kafkajs';
 // import { v4 as uuidv4 } from 'uuid';
-import { KAFKA_URL } from '../config';
+import { KAFKA_URL, KAFKA_CLIENT_ID } from '../config';
 const KafkaClient = new Kafka({
-    // clientId: 'my-app',
+    clientId: KAFKA_CLIENT_ID,
     brokers: [KAFKA_URL]
 });
 const Consumer: Consumer = KafkaClient.consumer({ groupId: 'group-test-1' });

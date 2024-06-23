@@ -4,9 +4,10 @@ import {faker} from "@faker-js/faker";
 import { v4 as uuidv4 } from 'uuid';
 import { ES_HANDLE_DATA_INDEX } from './constants';
 
-export const createData = async (document: object) => {
+const elastic = new ElasticSearch();
+
+export const storeDataToES = async (document: object) => {
     try {
-        const elastic = new ElasticSearch();
         const result = await elastic.client.create({
             index: ES_HANDLE_DATA_INDEX,
             id: uuidv4(),

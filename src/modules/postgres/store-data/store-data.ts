@@ -1,8 +1,8 @@
-import { PostgresDB } from '../../../core/pg';
+import {PostgresDB} from '../../../core/pg';
 import logger from '../../../core/logger';
 import {faker} from "@faker-js/faker";
 
-export const storeData = async(data: object) => {
+export const storeData = async (data: object) => {
     try {
         const pg = await (new PostgresDB()).connect();
 

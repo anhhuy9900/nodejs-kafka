@@ -23,6 +23,9 @@ export class ElasticSearch {
             },
         });
 
+        console.log("\n------------------------------------");
+        console.log('ElasticSearch INFO LOG: ', this.info());
+
         return this.client;
     }
 

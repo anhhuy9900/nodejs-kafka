@@ -10,6 +10,7 @@ export const ELASTIC_CLOUD_ID = config?.ELASTIC_CLOUD_ID || '';
 export const ELASTIC_USERNAME = config?.ELASTIC_USERNAME || '';
 export const ELASTIC_PASSWORD = config?.ELASTIC_PASSWORD || '';
 export const KAFKA_URL = config?.KAFKA_URL || '';
+export const KAFKA_CLIENT_ID = config?.KAFKA_CLIENT_ID || '';
 // POSTGRES
 export const PG_HOST = config?.PG_HOST || '';
 export const PG_PORT = (config?.PG_PORT) as unknown as number;

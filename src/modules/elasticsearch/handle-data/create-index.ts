@@ -1,5 +1,3 @@
-
-
 import {ElasticSearch} from '../../../core/eslasticsearch';
 import logger from '../../../core/logger';
 import {faker} from "@faker-js/faker";

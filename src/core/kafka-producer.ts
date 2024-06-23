@@ -39,7 +39,7 @@ export class KafkaProducer {
         //     logStartOffset: '0'
         //   }
         // ]
-        logger.info('INFO','KafkaProducer - send - sendData : ', JSON.stringify((data)))
+        logger.info('INFO','KafkaProducer - send - data : ', JSON.stringify((data)))
         return data;
     }
 

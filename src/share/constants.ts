@@ -1,4 +1,5 @@
 export const USER_PROFILE_TOPIC_NAME = 'user-profile-test';
+export const USER_PROFILE_GROUP_ID = 'group-user-profile';
 
 // Data for example push message
 export const PUSH_EACH_MESSAGE_GROUP_ID = 'group-push-each-message';
