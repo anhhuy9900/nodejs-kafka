@@ -29,7 +29,7 @@ const runProducer = async() => {
 
     setInterval(async () => {
         try {
-            await sendBatchMessage()
+            await sendMessage()
         } catch (error) {
             logger.error('Caught sendMessage while sending', error)
         }
