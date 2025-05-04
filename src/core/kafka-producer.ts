@@ -44,6 +44,7 @@ export class KafkaProducer {
     }
 
     async sendBatch(topicMessages: Kafkajs.TopicMessages[]): Promise<Kafkajs.RecordMetadata[]> {
+
         const data = await Producer.sendBatch({
             topicMessages,
         });

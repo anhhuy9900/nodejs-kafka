@@ -7,4 +7,4 @@ const run = async () => {
     await runProducer();
     await runConsumer();
 }
-run();
+run().then(r => r);
